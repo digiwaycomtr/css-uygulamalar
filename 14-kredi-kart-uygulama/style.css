@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: lightgray;
+}
+
+.card-container {
+  width: 330px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  transform-origin: center;
+}
+
+.card-content:hover {
+  transform: rotateX(180deg);
+}
+
+.card {
+  background-image: url(./space.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 20px;
+  font-size: 20px;
+  color: lightgray;
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px #000;
+  backface-visibility: hidden;
+}
+
+.bank-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.card-chip img {
+  width: 43px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.card-number {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 23px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.exp-date {
+  text-align: end;
+  margin-top: 5px;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-type img {
+  width: 50px;
+}
+
+.back {
+  transform: rotateX(180deg);
+}
+
+.stolen-card {
+  font-size: 8px;
+  padding-top: 10px;
+}
+
+.security-line {
+  background-color: #000;
+  height: 23%;
+  width: 330px;
+  transform: translateX(-20px);
+}
+
+.signature {
+  background-color: #fff;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-right: 8px;
+}
+
+.explanations {
+  font-size: 11px;
+  padding-bottom: 10px;
+}

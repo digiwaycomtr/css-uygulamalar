@@ -1,0 +1,45 @@
+:root {
+    --background : #FF6F50;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+}
+
+.background{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 500px;
+}
+
+.card {
+    border-radius: 1rem;
+    height: 24rem;
+    overflow: hidden;
+    box-shadow: 0 2px 6px white;
+    flex: 1;
+    transition: 0.4s ease-in-out;
+}
+
+.card img{
+    height: 24rem;
+}
+
+.card:hover {
+    flex:2;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}

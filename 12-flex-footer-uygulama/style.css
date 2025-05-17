@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hover_a: #0a3552;
+  --border-color: #0a3d60;
+  --footer-bg-color: linear-gradient(
+    to right,
+    #1a343b,
+    rgb(61, 116, 134),
+    #1a343b
+  );
+  --firm-text-bg-color: linear-gradient(
+    to right,
+    rgb(68, 117, 133),
+    #b3bfc8,
+    rgb(68, 117, 133)
+  );
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 30px 80px;
+  background: var(--footer-bg-color);
+}
+
+.footer .footer-main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  height: 100%;
+  gap: 25px;
+}
+
+.footer-main > div {
+  height: 100%;
+  width: 25%;
+}
+
+.firm-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.firm-logo img {
+  width: 20%;
+  object-fit: cover;
+}
+
+.firm-logo span {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  background: var(--firm-text-bg-color);
+  background-clip: text;
+  color: transparent;
+}
+
+.footer h3 {
+  font-size: 24px;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+}
+
+.footer a {
+  color: lightgray;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: var(--hover_a);
+  transition: color 0.3s;
+}
+
+.footer-copyright {
+  font-size: 18px;
+  text-align: center;
+  color: lightgrey;
+  padding: 30px 0;
+  border-top: 3px solid var(--border-color);
+  border-bottom: 3px solid var(--border-color);
+}
+
+.footer-copyright p {
+  margin-bottom: 8px;
+}
+
+.footer-copyright a {
+  color: var(--hover_a);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.footer-copyright a:hover {
+  color: lightgray;
+  transition: color 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .footer .footer-main {
+    gap: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-main > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-copyright p {
+    margin-bottom: 20px;
+  }
+}

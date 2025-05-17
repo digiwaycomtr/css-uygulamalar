@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  font-size: 150px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to top,
+    #740101 0%,
+    #cc3300 25%,
+    #ff6600 50%,
+    #cc3300 75%,
+    #740101 100%
+  );
+  background-size: 300% 300%;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flameMove 2s infinite;
+}
+
+@keyframes flameMove {
+  0% {
+    background-size: 300% 300%;
+    background-position: 50% 100%;
+  }
+  50% {
+    background-size: 320% 310%;
+    background-position: 50% 50%;
+  }
+  100% {
+    background-size: 300% 300%;
+    background-position: 50% 100%;
+  }
+}

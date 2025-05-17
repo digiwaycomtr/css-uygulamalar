@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #000000;
+    color: #f9f9f9;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    background-color: #090B0E;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.menu__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+.logo p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.logo img {
+    height: 2.5rem;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    margin-right: 3rem;
+    gap: 1.5rem;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+
+.navigation li a:hover {
+    color: #FF6F50;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.login {
+    border: 1px solid #3e3e3e;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #FF6F50;
+    color: #090B0E;
+}
+
+.sign_up {
+    background-color: #FF6F50;
+    border: 1px solid #FF6F50;
+    color: #090B0E;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
